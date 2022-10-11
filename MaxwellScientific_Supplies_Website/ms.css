@@ -1,0 +1,109 @@
+* { box-sizing: border-box; }
+header, nav, main, footer { 
+	display: block;
+}
+body { background-color: #2d4159;
+	color: #FFFFFF;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#wrapper { width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5085a5;
+	min-width: 1200px;
+	max-width: 1480px;
+}
+header {
+	background-image: url(mwslogo.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 93px;
+	margin: 25px 0 25px 15px;
+}
+footer {
+	background-color: #8fc1e3;
+	font-size: .80em;
+	font-style: italic;
+	text-align: center;
+	padding: 1em;
+	color: #17252a;
+}
+nav ul { 
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #8fc1e3;
+	width: 100%;
+}
+li a { 
+	color: #17252a;
+	padding: 8px;
+	display: block;
+	font-weight: bold;
+	font-size: larger;
+}
+li a:hover { 
+	background-color: #5085a5
+}
+
+main { 
+	padding: 2em 2em 1em 2em; 
+	margin: 0 50px 0 50px;
+}
+input, textarea {
+	display: block;
+    margin-bottom: 2em;
+}
+.ms { 
+	font-weight: bold;
+	font-style: italic;
+}
+@media only all and (max-width: 768px) {
+	h1 { font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; width: 85%; }
+	nav a { padding: 0.5em; width: 45%; float: left; min-width: 6em; margin-left: 0.5em; }
+	main { padding-top: 0; }
+	.floatleft { float: none; display: none; }
+	#hero { display: none; }
+	footer { padding: 0.5em; margin: 0; }
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
+@media only screen and (max-width: 1200px) {
+	body { margin: 0;
+		  padding: 0; }
+	#wrapper { width: 100%;
+		       min-width: 0;
+			   margin: 0;
+			   padding: 0; }
+	header { padding-top: 1px; }
+	nav { float: none;
+	      padding-left: 2em;
+	      width: auto; }
+	nav a { padding: 0.2em;
+	      margin-left: 0.3em;
+		  float: left;
+		  width: 23%; }
+	main  { padding: 2.5em 1em;
+	       margin: 0;
+		   font-size: 90%;
+		   clear: both; }
+	
+	h2, h3, p, dl { padding-left: 2em; padding-right: 2em; }
+	main ul { margin-left: 2em; }
+	.floatleft { margin-left: 2em; margin-bottom: 1em;  }
+	.clear { padding-left: 2em; }
+}
+#comments {
+	border: 5px outset #d79922;
+	padding: 0px 6px 0px 6px;
+}
+h2, h3 {
+color: #A9A9A9; }
+
+
+
+
+
+
+
